@@ -1,28 +1,103 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="contain">
+    <Navigation />
+    <Hero />
+    <Machine />
+    <Features />
+    <UseCases />
+    <Developers />
+    <Footer />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Hero from "./components/Hero";
+import Navigation from "./components/Navigation";
+import Machine from "./components/Machine";
+import Features from "./components/Features";
+import UseCases from "./components/UseCases";
+import Developers from "./components/Developers";
+import Footer from "./components/Footer";
+//import Machine from "http://localhost:3001/dist/my-custom.js"
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    Navigation,
+    Hero,
+    Machine,
+    Features,
+    UseCases,
+    Developers,
+    Footer
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+:root {
+  --akita-primary: #5f46b1;
+  --akita-secondary: #eb479d;
+  --akita-blue: #0bc5fe;
+  --akita-dark: #3d4449;
+  --akita-light: #efefef;
+}
+.contain {
+  margin: auto;
+  background-image: linear-gradient(to top left, #0BC5FE 0%, #5f46b1 50%, #ff2ea0 100%);
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  color: var(--akita-light)
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+.title {
+  font-size: 70px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+}
+.text {
+  font-size: 22px;
+  line-height: 1.3;
+  margin-bottom: 0;
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 1500px) {
+  .title {
+    font-size: 64px;
+  }
+  .text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1250px) {
+  .title {
+    font-size: 54px;
+  }
+  .text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1250px) {
+  .title {
+    font-size: 48px;
+  }
+  .text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+  .text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 425px) {
+  .title {
+    font-size: 32px;
+  }
 }
 </style>

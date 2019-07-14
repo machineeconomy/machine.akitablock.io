@@ -1,12 +1,18 @@
 <template>
-  <div class="contain">
-    <Navigation />
-    <Hero />
+  <div>
+    <div class="contain">
+      <Navigation />
+      <Hero />
+    </div>
+
     <Machine />
+    <LiveDemo />
     <Features />
     <UseCases />
     <Developers />
-    <Footer />
+    <div class="contain">
+      <Footer />
+    </div>
   </div>
 </template>
 
@@ -14,6 +20,7 @@
 import Hero from "./components/Hero";
 import Navigation from "./components/Navigation";
 import Machine from "./components/Machine";
+import LiveDemo from "./components/LiveDemo";
 import Features from "./components/Features";
 import UseCases from "./components/UseCases";
 import Developers from "./components/Developers";
@@ -25,6 +32,7 @@ export default {
     Navigation,
     Hero,
     Machine,
+    LiveDemo,
     Features,
     UseCases,
     Developers,
@@ -43,10 +51,15 @@ export default {
 }
 .contain {
   margin: auto;
-  background-image: linear-gradient(to top left, #0BC5FE 0%, #5f46b1 50%, #ff2ea0 100%);
+  background-image: linear-gradient(
+    to top left,
+    #0bc5fe 0%,
+    #5f46b1 50%,
+    #ff2ea0 100%
+  );
   background-size: cover;
   font-family: "Roboto", sans-serif;
-  color: var(--akita-light)
+  color: var(--akita-light);
 }
 ul {
   list-style: none;

@@ -3,7 +3,8 @@
     <h2 class="title">The Machine</h2>
     <b-card-group deck>
       <b-card
-        title="Easy installation and fast setup"
+        class="a-card"
+        title="Easy and fast setup"
         bg-variant="dark"
         text-variant="white"
       >
@@ -11,13 +12,15 @@
       </b-card>
 
       <b-card
-        title="The modular service design"
+        class="a-card"
+        title="Modular service design"
         bg-variant="dark"
         text-variant="white"
       >
         <b-card-text>Machines' modular services can be integrated into existing systems and hardware or by adding external pc units that can be as small and cheap as a Raspberry Pi</b-card-text>
       </b-card>
       <b-card
+        class="a-card"
         title="Open Source Software"
         bg-variant="dark"
         text-variant="white"

@@ -4,6 +4,7 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sed, nostrum est, consequuntur praesentium enim dolor blanditiis, nulla accusantium ducimus et illo culpa architecto numquam harum in labore! Dicta, voluptatem.</p>
     <b-card-group deck>
       <b-card
+        class="a-card"
         title="Documentation"
         bg-variant="dark"
         text-variant="white"
@@ -13,6 +14,7 @@
       </b-card>
 
       <b-card
+        class="a-card"
         title="Github Repository"
         bg-variant="dark"
         text-variant="white"
@@ -21,6 +23,7 @@
         <b-button href="#" variant="primary">Learn more</b-button>
       </b-card>
       <b-card
+        class="a-card"
         title="Tutorials"
         bg-variant="dark"
         text-variant="white"

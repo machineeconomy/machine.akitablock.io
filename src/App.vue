@@ -39,7 +39,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 :root {
   --akita-primary: #5f46b1;
   --akita-secondary: #eb479d;
@@ -74,6 +74,21 @@ ul {
   margin-bottom: 0;
   font-family: "Roboto", sans-serif;
 }
+
+.a-card {
+  background-image: linear-gradient(
+    to top left,
+    #0bc5fe 0%,
+    #5f46b1 50%,
+    #ff2ea0 100%
+  );
+  background-size: cover;
+  border-radius: 10px;
+  h4 {
+    padding-bottom: 10px;
+  }
+}
+
 @media (max-width: 1500px) {
   .title {
     font-size: 64px;

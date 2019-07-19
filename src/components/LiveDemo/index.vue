@@ -2,22 +2,47 @@
   <div class="liveDemo">
     <h2 class="title">Live Demo</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sed, nostrum est, consequuntur praesentium enim dolor blanditiis, nulla accusantium ducimus et illo culpa architecto numquam harum in labore! Dicta, voluptatem.</p>
-    <user-wallet />
+    <b-row class="use_case">
+      <user-wallet />
+      <div class="machine_wrapper">
+        <Machine url="http://localhost:3001" v-on:newActivity="addActivity" />
+        <Activities :data="activities" />
+      </div>
+    </b-row>
   </div>
 </template>
 <script>
 import UserWallet from "./UserWallet";
+import Machine from "./Machine";
+import Activities from "./Activities";
 
 export default {
   name: "LiveDemo",
-  components: {UserWallet}
+  components: { UserWallet, Machine, Activities },
+  data() {
+    return {
+      activities: []
+    };
+  },
+  methods: {
+    addActivity(activity) {
+      console.log("new machine", activity);
+      this.activities.push(activity);
+      //let container = this.$el.querySelector("#logger");
+    }
+  }
 };
 </script>
 
-<style>
-.machine {
+<style lang="scss" >
+.liveDemo {
   padding: 0 2%;
   height: 700px;
+
+  .use_case {
+    padding: 0 auto;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1400px) {

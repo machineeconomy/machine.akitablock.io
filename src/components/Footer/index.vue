@@ -1,51 +1,59 @@
 <template>
   <footer class="EngageNow">
-      <div class="footer__information">
-        <h3 class="title">The time to engage is now.</h3>
-        <p class="text footer__text">
-          Did our demonstration provide you a better understanding about the true power beyond blockchain?
-          Then let's build a competitve advantage today to stay ahead of the competition:
-        </p>
+    <div class="footer__information">
+      <h3 class="title">The time to engage is now.</h3>
+      <p class="text footer__text">
+        Did our demonstration provide you a better understanding about the true power beyond blockchain?
+        Then let's build a competitve advantage today to stay ahead of the competition:
+      </p>
+    </div>
+    <div class="send__email">
+      <a
+        class="email__button"
+        href="mailto:hello@akitablock.io?subject=Machine%20Economy%20Use%20Case"
+      >
+        <standartButton />
+      </a>
+    </div>
+    <div class="network__icons">
+      <ul>
+        <li>
+          <a href="https://twitter.com/AkitaBlock" target="_blank" class="network__link twitter"></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/nino-ulrich"
+            target="_blank"
+            class="network__link linkedIn"
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/machineeconomy" target="_blank" class="network__link gitHub"></a>
+        </li>
+        <li>
+          <a href="https://www.iota.org" target="_blank" class="network__link iota"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="contain">
+      <span class="footer__background"></span>
+      <div class="footer__bottom text">
+        <span class="bottom__text">
+          Open source project
+          <br />made by AKITA
+        </span>
+        <a
+          class="bottom__link"
+          href="https://github.com/machineeconomy/m2m.akitablock.io/blob/master/Site%20Notice"
+          target="_blank"
+        >Site Notice</a>
       </div>
-      <div class="send__email">
-        <a class="email__button" href="mailto:hello@akitablock.io?subject=Machine%20Economy%20Use%20Case">
-          <standartButton />
-        </a>
-      </div>
-      <div class="network__icons">
-        <ul>
-          <li>
-            <a href="https://twitter.com/AkitaBlock" target="_blank" class="network__link twitter"></a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/nino-ulrich"
-              target="_blank"
-              class="network__link linkedIn"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/machineeconomy"
-              target="_blank"
-              class="network__link gitHub"
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.iota.org" target="_blank" class="network__link iota"></a>
-          </li>
-        </ul>
-      </div>
-    <span class="footer__background"></span>
-    <div class="footer__bottom text">
-      <span class="bottom__text">Open source project <br/>made by AKITA</span>
-      <a class="bottom__link" href="https://github.com/machineeconomy/m2m.akitablock.io/blob/master/Site%20Notice" target="_blank">Site Notice</a>
     </div>
   </footer>
 </template>
 
 <script>
-import  StandartButton from "../StandartButton";
+import StandartButton from "../StandartButton";
 export default {
   name: "Footer",
   components: {
@@ -55,9 +63,8 @@ export default {
 </script>
 
 <style lang="scss">
-footer {
+.EngageNow {
   position: relative;
-  margin: 0 2%;
 }
 .footer__background {
   display: block;
@@ -71,9 +78,7 @@ footer {
 }
 .footer__information {
   max-width: 850px;
-}
-.footer__information {
-  margin: 20px 5px;
+  margin: 0 2%;
 }
 .send__email {
   margin: 30px 40px 80px;
@@ -105,8 +110,8 @@ footer {
   margin: 0px 25px;
   background-size: 100%;
   background-repeat: no-repeat;
-   &:hover {
-    transform: scale(1.1)
+  &:hover {
+    transform: scale(1.1);
   }
 }
 .footer__bottom {

@@ -10,9 +10,7 @@
     <Features />
     <UseCases />
     <Developers />
-    <div class="contain">
       <Footer />
-    </div>
   </div>
 </template>
 

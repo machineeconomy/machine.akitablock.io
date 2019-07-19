@@ -176,7 +176,7 @@ export default {
 .user {
             z-index: 1;
 
-  padding: 10px 20px;
+  padding: 0 20px;
   min-width: 290px;
   max-height: 500px;
   max-width: 300px;
@@ -209,6 +209,7 @@ export default {
       text-align: center;
       max-width: 260px;
       min-width: 240px;
+      height: 340px;
       p {
         color: black;
         margin: 0;
@@ -228,7 +229,7 @@ export default {
     position: relative;
     right: calc(100% - 50px);
     bottom: 300px;
-    z-index: 0;
+    z-index: -100;
   }
 }
 

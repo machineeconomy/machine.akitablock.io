@@ -1,7 +1,30 @@
 <template>
   <div class="machine">
     <h2 class="title">The Machine</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sed, nostrum est, consequuntur praesentium enim dolor blanditiis, nulla accusantium ducimus et illo culpa architecto numquam harum in labore! Dicta, voluptatem.</p>
+    <b-card-group deck>
+      <b-card
+        title="Easy installation and fast setup"
+        bg-variant="dark"
+        text-variant="white"
+      >
+        <b-card-text>The Akita machine can easily be installed and run on any device in a capseled container. You can configurate the machine with the Admin App in your favourite Web Browser.</b-card-text>
+      </b-card>
+
+      <b-card
+        title="The modular service design"
+        bg-variant="dark"
+        text-variant="white"
+      >
+        <b-card-text>Machines' modular services can be integrated into existing systems and hardware or by adding external pc units that can be as small and cheap as a Raspberry Pi</b-card-text>
+      </b-card>
+      <b-card
+        title="Open Source Software"
+        bg-variant="dark"
+        text-variant="white"
+      >
+        <b-card-text>We love open source - so the source code of the Akita machine is MIT lincesed an can bse used by everyone.</b-card-text>
+      </b-card>
+    </b-card-group>
   </div>
 </template>
 <script>

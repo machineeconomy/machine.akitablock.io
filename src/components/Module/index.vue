@@ -1,5 +1,5 @@
 <template>
-  <div id="module">
+  <div id="module" class="contain section">
     <h2 class="title">The Module</h2>
     <b-card-group deck>
       <b-card
@@ -39,8 +39,7 @@ export default {
 </script>
 
 <style>
-.machine {
-  padding: 0 2%;
+#module {
   height: 700px;
 }
 

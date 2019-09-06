@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="app">
     <Header />
     <Module />
     <Features />
@@ -40,48 +40,38 @@ export default {
   --akita-light: #f2f2f2;
   --akita-blue: #00b0f0;
 }
-#app {
-  background: var(--akita-light);
+.app {
+  background-color: var(--akita-light);
+
 }
 .contain {
   max-width: 1600px;
   padding: 0px 50px;
   margin: auto;
+ 
 }
 
-.header {
-  background: linear-gradient(
-    to bottom right,
-    var(--akita-primary) 50%,
-    var(--akita-secondary) 85%
-  );
-  position: relative;
-  min-height: 100vh;
-  padding-bottom: 250px;
-  margin-bottom: 100px;
+.section {
+   .title {
+    font-size: 60px;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    color: var(--akita-dark);
+  }
   .text {
-    color: var(--akita-light);
-    position: relative;
-    z-index: 2;
+    font-size: 22px;
+    line-height: 1.3;
+    margin-bottom: 0;
+    font-family: ocr-b-std, monospace;
+    color: var(--akita-dark);
   }
 }
+
 ul {
   list-style: none;
   padding-left: 0;
 }
-.title {
-  font-size: 60px;
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
-  color: var(--akita-light);
-}
-.text {
-  font-size: 22px;
-  line-height: 1.3;
-  margin-bottom: 0;
-  font-family: ocr-b-std, monospace;
-  color: var(--akita-light);
-}
+
 @media (max-width: 1500px) {
   .title {
     font-size: 54px;

@@ -33,12 +33,15 @@ export default {
   },};
 </script>
 
-<style>
+<style lang="scss">
 .information {
   margin-top: 100px;
 }
 .information__block {
   margin-bottom: 20px;
+}
+.title {
+  
 }
 .information__text,
 .information__title {

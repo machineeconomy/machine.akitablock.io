@@ -74,12 +74,13 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 
 .navigation {
   padding-top: 50px;
   position: relative;
   z-index: 10;
+  color: #fff;
 }
 .navigation__list {
   display: flex;

@@ -1,5 +1,5 @@
 <template>
-  <div class="machine">
+  <div id="module">
     <h2 class="title">The Module</h2>
     <b-card-group deck>
       <b-card

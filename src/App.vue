@@ -1,11 +1,6 @@
 <template>
   <div>
-    <header class="header">
-      <div class="contain">
-        <Navigation />
-        <Hero />
-      </div>
-    </header>
+    <Header />
     <Module />
     <Features />
     <UseCases />
@@ -15,8 +10,7 @@
 </template>
 
 <script>
-import Hero from "./components/Hero";
-import Navigation from "./components/Navigation";
+import Header from "./components/Header";
 import Module from "./components/Module";
 import LiveDemo from "./components/LiveDemo";
 import Features from "./components/Features";
@@ -27,8 +21,7 @@ import Footer from "./components/Footer";
 export default {
   name: "app",
   components: {
-    Navigation,
-    Hero,
+    Header,
     Module,
     LiveDemo,
     Features,

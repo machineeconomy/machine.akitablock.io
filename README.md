@@ -1,4 +1,4 @@
-# machine.akitablock.io
+# module.akitablock.io
 
 ## Project setup
 ```

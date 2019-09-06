@@ -42,17 +42,15 @@ export default {
 }
 .app {
   background-color: var(--akita-light);
-
 }
 .contain {
   max-width: 1600px;
   padding: 0px 50px;
   margin: auto;
- 
 }
 
 .section {
-   .title {
+  .title {
     font-size: 60px;
     font-family: "Oswald", sans-serif;
     font-weight: bold;
@@ -65,6 +63,15 @@ export default {
     font-family: ocr-b-std, monospace;
     color: var(--akita-dark);
   }
+}
+
+.a-card {
+  font-family: "Oswald", sans-serif;
+  background: linear-gradient(
+    to bottom right,
+    var(--akita-primary) 50%,
+    var(--akita-secondary) 85%
+  );
 }
 
 ul {

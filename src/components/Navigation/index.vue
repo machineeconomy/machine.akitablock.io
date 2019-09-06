@@ -2,7 +2,7 @@
   <nav class="navigation">
     <ul class="navigation__list">
       <li class="navigation__item">
-        <a href="#" class="navigation__link navigation__logo"></a>
+        <a href="#" class="navigation__link navigation__headline">AKITA IOTA MODULE</a>
       </li>
 
       <li v-for="(li, index) in navigation" :class="li.liClass" :key="index">
@@ -98,14 +98,15 @@ export default {
   position: relative;
   top: -20px;
 }
-.navigation__logo {
-  display: block;
+.navigation__headline {
+  font-size: 1.5em;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  color: var(--akita-light);
   width: 170px;
   height: 85px;
-  background: url("../../assets/logo.png") no-repeat;
-  background-size: 100%;
   position: relative;
-  top: -25px;
+  bottom: 5px;
 }
 .navigation__link:hover {
   text-decoration: underline;

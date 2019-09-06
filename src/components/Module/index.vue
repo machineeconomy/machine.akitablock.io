@@ -1,6 +1,6 @@
 <template>
   <div class="machine">
-    <h2 class="title">The Machine</h2>
+    <h2 class="title">The Module</h2>
     <b-card-group deck>
       <b-card
         class="a-card"
@@ -8,7 +8,7 @@
         bg-variant="dark"
         text-variant="white"
       >
-        <b-card-text>The Akita machine can easily be installed and run on any device in a capseled container. You can configurate the machine with the Admin App in your favourite Web Browser.</b-card-text>
+        <b-card-text>The Akita module can easily be installed and run on any device in a capseled container. You can configurate the machine with the Admin App in your favourite Web Browser.</b-card-text>
       </b-card>
 
       <b-card

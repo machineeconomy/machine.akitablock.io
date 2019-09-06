@@ -1,7 +1,13 @@
 <template>
   <div class="information">
     <div class="information__block">
-      <h1 class="title information__title">IOTA AKITA MACHINE</h1>
+      <h1 class="title information__title">
+        <textAnimation
+          :textList="['Machine-to-Machine M2M Payment.', 'IOTA Tangle.', 'AKITA prototypes.']"
+          :writingSpeed="50"
+          :changingSpeed="4000"
+        />
+      </h1>
       <h3
         class="subtitle information__title"
       >Prepare your machines for the Industry 4.0 and the machine economy.</h3>
@@ -9,14 +15,22 @@
     <div class="information__block">
       <p
         class="text information__text"
-      >The Akita Machine brings an IOTA Wallet and automated processes triggered by payments.</p>
-      <p class="text information__text">Learn how it works, discover the features and run your own machine.</p>
+      >The Akita IOTA Module brings an IOTA Wallet and automated processes triggered by payments.</p>
+      <p
+        class="text information__text"
+      >Learn how it works, discover the features and run your own machine.</p>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import TextAnimation from './TextAnimation'
+
+export default {
+  name: 'Information',
+  components: {
+    TextAnimation
+  },};
 </script>
 
 <style>

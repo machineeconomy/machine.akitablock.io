@@ -1,23 +1,23 @@
 <template>
   <div>
-    <div class="contain">
-      <Navigation />
-      <Hero />
-    </div>
-
-    <Machine />
-    <LiveDemo />
+    <header class="header">
+      <div class="contain">
+        <Navigation />
+        <Hero />
+      </div>
+    </header>
+    <Module />
     <Features />
     <UseCases />
     <Developers />
-      <Footer />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Hero from "./components/Hero";
 import Navigation from "./components/Navigation";
-import Machine from "./components/Machine";
+import Module from "./components/Module";
 import LiveDemo from "./components/LiveDemo";
 import Features from "./components/Features";
 import UseCases from "./components/UseCases";
@@ -29,7 +29,7 @@ export default {
   components: {
     Navigation,
     Hero,
-    Machine,
+    Module,
     LiveDemo,
     Features,
     UseCases,
@@ -41,57 +41,57 @@ export default {
 
 <style lang="scss">
 :root {
-  --akita-primary: #5f46b1;
-  --akita-secondary: #eb479d;
-  --akita-blue: #0bc5fe;
-  --akita-dark: #3d4449;
-  --akita-light: #efefef;
+  --akita-primary: #00b0f0;
+  --akita-secondary: #00fb92;
+  --akita-dark: #3b3838;
+  --akita-light: #f2f2f2;
+  --akita-blue: #00b0f0;
+}
+#app {
+  background: var(--akita-light);
 }
 .contain {
+  max-width: 1600px;
+  padding: 0px 50px;
   margin: auto;
-  background-image: linear-gradient(
-    to top left,
-    #0bc5fe 0%,
-    #5f46b1 50%,
-    #ff2ea0 100%
+}
+
+.header {
+  background: linear-gradient(
+    to bottom right,
+    var(--akita-primary) 50%,
+    var(--akita-secondary) 85%
   );
-  background-size: cover;
-  font-family: "Roboto", sans-serif;
-  color: var(--akita-light);
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 250px;
+  margin-bottom: 100px;
+  .text {
+    color: var(--akita-light);
+    position: relative;
+    z-index: 2;
+  }
 }
 ul {
   list-style: none;
   padding-left: 0;
 }
 .title {
-  font-size: 70px;
+  font-size: 60px;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
+  color: var(--akita-light);
 }
 .text {
   font-size: 22px;
   line-height: 1.3;
   margin-bottom: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: ocr-b-std, monospace;
+  color: var(--akita-light);
 }
-
-.a-card {
-  background-image: linear-gradient(
-    to top left,
-    #0bc5fe 0%,
-    #5f46b1 50%,
-    #ff2ea0 100%
-  );
-  background-size: cover;
-  border-radius: 10px;
-  h4 {
-    padding-bottom: 10px;
-  }
-}
-
 @media (max-width: 1500px) {
   .title {
-    font-size: 64px;
+    font-size: 54px;
   }
   .text {
     font-size: 20px;
@@ -99,7 +99,7 @@ ul {
 }
 @media (max-width: 1250px) {
   .title {
-    font-size: 54px;
+    font-size: 44px;
   }
   .text {
     font-size: 18px;
@@ -107,7 +107,7 @@ ul {
 }
 @media (max-width: 1250px) {
   .title {
-    font-size: 48px;
+    font-size: 38px;
   }
   .text {
     font-size: 18px;
@@ -115,7 +115,7 @@ ul {
 }
 @media (max-width: 768px) {
   .title {
-    font-size: 40px;
+    font-size: 30px;
   }
   .text {
     font-size: 16px;
@@ -123,7 +123,10 @@ ul {
 }
 @media (max-width: 425px) {
   .title {
-    font-size: 32px;
+    font-size: 22px;
+  }
+  .contain {
+    padding: 0 20px;
   }
 }
 </style>

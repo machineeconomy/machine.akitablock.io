@@ -1,5 +1,5 @@
 <template>
-  <div class="liveDemo">
+  <div id="liveDemo" class="contain section">
     <h2 class="title">Live Demo</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sed, nostrum est, consequuntur praesentium enim dolor blanditiis, nulla accusantium ducimus et illo culpa architecto numquam harum in labore! Dicta, voluptatem.</p>
     <OrderButton
@@ -48,8 +48,7 @@ export default {
 </script>
 
 <style lang="scss" >
-.liveDemo {
-  padding: 0 2%;
+#liveDemo {
   height: 700px;
 
   .use_case {

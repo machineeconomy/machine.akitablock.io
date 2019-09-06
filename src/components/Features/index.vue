@@ -1,5 +1,5 @@
 <template>
-  <div class="features">
+  <div id="features" class="contain section">
     <h2 class="title">Features</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sed, nostrum est, consequuntur praesentium enim dolor blanditiis, nulla accusantium ducimus et illo culpa architecto numquam harum in labore! Dicta, voluptatem.</p>
     <b-card-group deck>
@@ -42,8 +42,7 @@ export default {
 </script>
 
 <style>
-.features {
-  padding: 0 2%;
+#features {
   height: 700px;
 }
 

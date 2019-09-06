@@ -1,5 +1,5 @@
 <template>
-  <div class="useCases">
+  <div id="useCases" class="contain section">
     <h2 class="title">Use Cases</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sed, nostrum est, consequuntur praesentium enim dolor blanditiis, nulla accusantium ducimus et illo culpa architecto numquam harum in labore! Dicta, voluptatem.</p>
   </div>
@@ -12,8 +12,7 @@ export default {
 </script>
 
 <style>
-.useCases {
-  padding: 0 2%;
+#useCases {
   height: 700px;
 }
 

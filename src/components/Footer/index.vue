@@ -1,5 +1,5 @@
 <template>
-  <footer class="EngageNow">
+  <footer id="EngageNow" class="contain section">
     <div class="footer__information">
       <h3 class="title">The time to engage is now.</h3>
       <p class="text footer__text">
@@ -63,7 +63,7 @@ export default {
 </script>
 
 <style lang="scss">
-.EngageNow {
+#EngageNow {
   position: relative;
 }
 .footer__background {
@@ -78,7 +78,6 @@ export default {
 }
 .footer__information {
   max-width: 850px;
-  margin: 0 2%;
 }
 .send__email {
   margin: 30px 40px 80px;
